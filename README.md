@@ -1,11 +1,11 @@
-# Valido
+# Valix-validator
 
-Valido is a lightweight, type-safe package that helps you validate data in JavaScript and TypeScript with easy-to-use, reusable schemas.
+Valix-validator is a lightweight, type-safe package that helps you validate data in JavaScript and TypeScript with easy-to-use, reusable schemas.
 
 ## Installation
 
 ```bash
-npm i valido-validator
+npm i valix-validator
 ```
 
 ## Features
@@ -20,7 +20,7 @@ npm i valido-validator
 ## Basic Usage
 
 ```typescript
-import v from 'valido';
+import v from 'valix-validator';
 
 // Define a schema
 const userSchema = v.object({
