@@ -1,6 +1,6 @@
 {
   "name": "valido-validator",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Valido helps you validate data in JavaScript and TypeScript with easy-to-use, reusable schemas.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
