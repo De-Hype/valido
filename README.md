@@ -5,7 +5,7 @@ Valido is a lightweight, type-safe package that helps you validate data in JavaS
 ## Installation
 
 ```bash
-npm install valido
+npm i valido-validator
 ```
 
 ## Features
