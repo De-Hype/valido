@@ -15,25 +15,25 @@
     "type": "git",
     "url": "git+https://github.com/De-Hype/valido.git"
   },
- "keywords": [
-  "valido",
-  "validation",
-  "validator",
-  "schema validation",
-  "runtime validation",
-  "typescript",
-  "type-safe",
-  "type validation",
-  "data validation",
-  "javascript",
-  "form validation",
-  "api validation",
-  "object schema",
-  "framework agnostic",
-  "zod",
-  "joi",
-  "yup"
-],
+  "keywords": [
+    "valido",
+    "validation",
+    "validator",
+    "schema validation",
+    "runtime validation",
+    "typescript",
+    "type-safe",
+    "type validation",
+    "data validation",
+    "javascript",
+    "form validation",
+    "api validation",
+    "object schema",
+    "framework agnostic",
+    "zod",
+    "joi",
+    "yup"
+  ],
   "author": "David Hype",
   "license": "MIT",
   "bugs": {
@@ -41,12 +41,12 @@
   },
   "homepage": "https://github.com/De-Hype/valido#readme",
   "devDependencies": {
-    "@types/jest": "^29.5.0",
+    "@types/jest": "^29.5.14",
     "@types/node": "^18.15.11",
-    "jest": "^29.5.0",
-    "ts-jest": "^29.1.0",
-    "typescript": "^5.0.4",
     "eslint": "^8.37.0",
-    "prettier": "^2.8.7"
+    "jest": "^29.7.0",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.3.1",
+    "typescript": "^5.8.3"
   }
 }

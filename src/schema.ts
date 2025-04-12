@@ -1,7 +1,5 @@
 import { ValidationContext, ValidationError, ValidationOptions, ValidationResult } from './types';
 import { ValidoError } from './errors';
-import { OptionalSchema } from './validators/optional';
-import { NullableSchema } from './validators/nullable';
 
 export abstract class Schema<T> {
   abstract _validate(value: unknown, context: ValidationContext): ValidationResult<T>;
@@ -39,3 +37,6 @@ export abstract class Schema<T> {
     return new NullableSchema(this);
   }
 }
+
+import { OptionalSchema } from './validators/optional';
+import { NullableSchema } from './validators/nullable';

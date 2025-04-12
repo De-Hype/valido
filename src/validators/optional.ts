@@ -1,5 +1,5 @@
-import { Schema } from "../schema";
-import { ValidationContext, ValidationResult } from "../types";
+import { Schema } from '../schema';
+import { ValidationContext, ValidationResult } from '../types';
 
 export class OptionalSchema<T> extends Schema<T | undefined> {
   private _schema: Schema<T>;
@@ -9,14 +9,11 @@ export class OptionalSchema<T> extends Schema<T | undefined> {
     this._schema = schema;
   }
 
-  _validate(
-    value: unknown,
-    context: ValidationContext
-  ): ValidationResult<T | undefined> {
+  _validate(value: unknown, context: ValidationContext): ValidationResult<T | undefined> {
     if (value === undefined) {
       return {
         success: true,
-        value: undefined,
+        value: undefined
       };
     }
 
