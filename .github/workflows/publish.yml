@@ -1,6 +1,33 @@
-name: Publish Package To NPM
+name: Publish Package
 
 on:
   push:
     branches:
-      - master
+      - master  
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2  
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' 
+
+      - name: Install Dependencies
+        run: npm install 
+
+      - name: Bump Version and Publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
+        run: |
+          # Install standard-version and bump the version
+          npm install --save-dev standard-version
+          npx standard-version --release-as patch  # Change this to 'minor' or 'major' if needed
+
+          # Publish the updated package to npm
+          npm publish --access public
